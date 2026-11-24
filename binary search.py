@@ -1,7 +1,7 @@
 myArray = [1, 2, 7, 12, 14, 19, 24, 77]
 numInput = int(input("Enter the number to be found: "))
 LBound = 0
-UBound = int(len(myArray) -1)
+UBound = (len(myArray) -1)
 found = False
 
 while found == False and LBound <= UBound:
