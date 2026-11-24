@@ -6,9 +6,11 @@ for i in range(1, len(array)):
     while j >= 0 and key < array[j]:
         array[j + 1] = array[j]
         j -= 1
-        array[j + 1] = key
+    array[j + 1] = key
 
 print(array)
+
+
 
 
 
