@@ -38,11 +38,11 @@ class MagicCharacter(Character):
     def Learn(self):
         elemnt = self.__Element 
         if elemnt == 'fire' or elemnt == 'water':
-            super().SetIntelligence(super().GetIntelligence()*1.2)
+            self.SetIntelligence(self.GetIntelligence()*1.2)
         elif elemnt == 'earth':
-            super().SetIntelligence(super().GetIntelligence()*1.3)
+            self.SetIntelligence(self.GetIntelligence()*1.3)
         else:
-            super().SetIntelligence(super().GetIntelligence()*1.1)
+            self.SetIntelligence(self.GetIntelligence()*1.1)
 
 FirstMagic = MagicCharacter('fire','LIGHT', datetime.date(2018, 3, 3), 75, 22)
 FirstMagic.Learn()
