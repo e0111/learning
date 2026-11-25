@@ -17,7 +17,7 @@ class Character():
     def SetIntelligence(self, value):
         self.__Intelligence = value 
 
-    def Learn (self):
+    def Learn(self):
         self.__Intelligence = self.__Intelligence*1.1
       # self.SetIntelligence(self.GetIntelligence()*1.1)
 
@@ -26,7 +26,7 @@ class Character():
 
 FirstCharacter = Character("Royal", datetime.datetime(2019, 1, 1), 70, 30)
 FirstCharacter.Learn()
-print(FirstCharacter.ReturnAge(),"years old and his intelligence is", FirstCharacter.GetIntelligence())
+print(FirstCharacter.ReturnAge(),"years old and their intelligence is", FirstCharacter.GetIntelligence())
 
 
 class MagicCharacter(Character):
@@ -45,7 +45,7 @@ class MagicCharacter(Character):
 
 FirstMagic = MagicCharacter('fire','LIGHT', datetime.date(2018, 3, 3), 75, 22)
 FirstMagic.Learn()
-print(FirstMagic.ReturnAge(),"years old and his intelligence is", FirstMagic.GetIntelligence())
+print(FirstMagic.ReturnAge(),"years old and their intelligence is", FirstMagic.GetIntelligence())
 
 
 
