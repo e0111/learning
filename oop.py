@@ -31,8 +31,9 @@ print(FirstCharacter.ReturnAge(),"years old and their intelligence is", FirstCha
 
 class MagicCharacter(Character):
     def __init__(self, elem, Name, DoB, intel, speed):
-        super().__init__(Name, DoB, intel, speed)
-        self.__Element = elem 
+        parent = super()
+        parent.__init__(Name, DoB, intel, speed)
+        self.__Element = elem #string
 
     def Learn(self):
         elemnt = self.__Element 
